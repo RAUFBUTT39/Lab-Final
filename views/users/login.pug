@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1 LOGIN
+  form(action="/login",method="post")        
+        .form-group
+            label(for="email") email
+            input#email(type="text", class="form-control", name="email" )
+        .form-group
+            label(for="password") password
+            input#price(type="password", class="form-control", name="password")
+        input(type="submit", class="btn btn-success" value="LOGIN")
